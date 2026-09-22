@@ -274,14 +274,14 @@ end
 -- SEARCH FUNCTION
 -- ==================================================
 ClickBtn.MouseButton1Click:Connect(function()
-    FeatureStatus.Text = "Searching fresh servers..."
+    FeatureStatus.Text = "หาเซิร์ฟอยู่ไอควาย"
     FeatureStatus.TextColor3 = Color3.fromRGB(150, 150, 170)
     ClearList()
 
     local servers = FetchServers()
 
     if #servers == 0 then
-        FeatureStatus.Text = "No servers with 1 player found."
+        FeatureStatus.Text = "แม่งไม่เจอเซิร์ฟที่มี 1 คนวะ."
         FeatureStatus.TextColor3 = Color3.fromRGB(255, 0, 0)
         return
     end
