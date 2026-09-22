@@ -209,7 +209,7 @@ local function CreateEntry(index, server)
     end)
 
     JoinBtn.MouseButton1Click:Connect(function()
-        FeatureStatus.Text = "Teleporting to server..."
+        FeatureStatus.Text = "ย้ายเซิร์ฟอยู่ไอควาย..."
         FeatureStatus.TextColor3 = Color3.fromRGB(0, 255, 105)
 
         local success, err = pcall(function()
